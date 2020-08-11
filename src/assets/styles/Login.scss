@@ -1,0 +1,131 @@
+.login {
+    background-image: linear-gradient(#21c08b, #ab88ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.login__container {
+    background-color: rgba(255,255,255, 0.1);
+    border: 2px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    padding: 60px 68px 40px;
+    min-height: 804px;
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @media (max-width: 600px) {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__form .input {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli';
+    margin: 20px 0;
+    height: 50px;
+    font-family: 'Mulish', sans-serif;
+    
+}
+
+.button {
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Muli';
+    font-size: 1rem;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 0.1rem;
+    margin: 10px 0;
+    outline: none;
+    font-family: 'Mulish', sans-serif;
+}
+
+.button:hover, .button:active {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.login__form .input::placeholder {
+    color: #fff;
+    margin-left: 10px;
+}
+
+
+.login__remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0; 
+}
+
+.login__remember-me label {
+    font-size: 14px;
+}
+
+.login__remember-me a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.login__remember-me a:hover {
+    transform: scale(1.1);
+}
+
+.login__social-media > div {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.2s;
+    cursor: pointer     ;
+    @media (max-width: 600px) {
+        justify-content: center;
+    }
+}
+
+.login__social-media > div:hover {
+    transform: scale(1.05);
+}
+
+.login__register {
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.login__register a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.login__register a:hover {
+    margin-left: 10px;
+}

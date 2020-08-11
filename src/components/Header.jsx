@@ -14,7 +14,7 @@ const Header = () => {
                 </div>
                 <div className="header__dropdown">
                     <a href="#">Ajustes</a>
-                    <a href="login.html">Iniciar Sesión</a>
+                    <a href="/login">Iniciar Sesión</a>
                 </div>
             </div>
         </header>   
