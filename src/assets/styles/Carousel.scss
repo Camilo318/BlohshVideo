@@ -1,0 +1,27 @@
+.carousel {
+    width: 100%;
+    overflow-x: auto;
+    padding: 30px;
+    @media (max-width: 425px) {
+        padding: 10px;
+    }
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel__container {
+    white-space: nowrap;
+    margin: 70px 0;
+    padding-bottom: 10px;
+}
+.carousel__container:hover .carousel__item {
+    opacity: 0.3;
+}
+
+
+.carousel__container .carousel__item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
