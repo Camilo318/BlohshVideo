@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from 'react'
 import Header from './Header'
 import Search from './Search'
-import Categories from '../components/Categories'
-import Carousel from '../components/Carousel'
-import Item from '../components/Item'
-import Footer from '../components/Footer'
+import Categories from './Categories'
+import Carousel from './Carousel'
+import Item from './Item'
+import Footer from './Footer'
 import '../assets/styles/App.scss'
 import useInitialState from '../hooks/useInitialState.js'
 
 const API = 'http://localhost:3000/initialState'
-const App = () => {
+const Home = () => {
     const initialState = useInitialState(API)
     return (
         <div className="App">
@@ -47,4 +47,4 @@ const App = () => {
     )
 }
 
-export default App
+export default Home
