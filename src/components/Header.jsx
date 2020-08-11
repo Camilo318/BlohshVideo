@@ -1,11 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import  '../assets/styles/Header.scss'
 import Logo from '../assets/images/logo.png'
 
 const Header = () => {
     return (
         <header className="header">
-            <img src={Logo} alt="" className="header__img"/>
+            <Link to='/'>
+                <img src={Logo} alt="" className="header__img"/>
+            </Link>
 
             <div className="header__options">
                 <div className="header__profile">
@@ -14,7 +17,9 @@ const Header = () => {
                 </div>
                 <div className="header__dropdown">
                     <a href="#">Ajustes</a>
-                    <a href="/login">Iniciar Sesión</a>
+                    <Link to='/login'>
+                        Iniciar Sesión
+                    </Link>
                 </div>
             </div>
         </header>   
