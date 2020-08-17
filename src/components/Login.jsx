@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {loginRequest} from '../actions/index'
 import '../assets/styles/Login.scss'
 
-const Login = ({loginRequest}) => {
+const Login = ({loginRequest, history}) => {
 
     const [credentials, setCredentials] = useState({
         email: '',
@@ -13,6 +13,7 @@ const Login = ({loginRequest}) => {
         e.preventDefault()
         console.log(credentials)
         loginRequest(credentials)
+        history.push('/')
 
     }
 
