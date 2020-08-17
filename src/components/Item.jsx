@@ -7,6 +7,7 @@ import '../assets/styles/Item.scss'
 import play from '../assets/images/play-icon.png'
 import plus from '../assets/images/plus-icon.png'
 import remove from '../assets/images/remove-icon.webp'
+import { Link } from 'react-router-dom'
 
 const Item = (props) => {
     const { setFavorite, deleteFavorite, isInMyList} = props
@@ -25,7 +26,11 @@ const Item = (props) => {
 
             <div className="carousel__item__details">
                 <div>
+
+                    <Link to={`/player/${props.id}`}>
                     <img src={play} alt=""/>
+                    </Link>
+
                     {isInMyList ?
                     <img src={remove} alt="" onClick={() => handleRemove(props.title)}/>
                     :

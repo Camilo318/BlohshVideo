@@ -4,6 +4,7 @@ import Home from '../components/Home'
 import Login from '../components/Login'
 import Layout from '../components/Layout'
 import Register from '../components/Register'
+import { Player } from '../components/Player'
 
 const App = () => (
     <BrowserRouter>
@@ -12,6 +13,7 @@ const App = () => (
             <Route exact path="/" component={Home} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
+            <Route exact path="/player/:id" component={Player} />
         </Switch>
     </Layout>
     </BrowserRouter>
