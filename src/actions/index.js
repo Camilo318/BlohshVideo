@@ -28,3 +28,10 @@ export function logoutRequest(payload) {
         
     }
 }
+
+export function newUser(payload) {
+    return {
+        type: 'NEW_USER',
+        payload
+    }
+}
