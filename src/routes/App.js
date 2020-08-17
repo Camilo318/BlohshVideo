@@ -4,7 +4,7 @@ import Home from '../components/Home'
 import Login from '../components/Login'
 import Layout from '../components/Layout'
 import Register from '../components/Register'
-import { Player } from '../components/Player'
+import Player from '../components/Player'
 
 const App = () => (
     <BrowserRouter>

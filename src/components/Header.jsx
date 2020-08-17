@@ -16,7 +16,7 @@ const Header = ({user, logoutRequest}) => {
     return (
         <header className="header">
             <Link to='/'>
-                <img src={Logo} alt="" className="header__img"/>
+                <img src={Logo} alt="logo" className="header__img"/>
             </Link>
 
             <div className="header__options">

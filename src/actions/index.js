@@ -35,3 +35,10 @@ export function newUser(payload) {
         payload
     }
 }
+
+export function getVideoSource(payload) {
+    return {
+        type: 'GET_VIDEO_SOURCE',
+        payload
+    }
+}
