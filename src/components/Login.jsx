@@ -1,4 +1,5 @@
 import React, {useState, useEffect }from 'react'
+import { Link } from 'react-router-dom'
 import {connect} from 'react-redux'
 import {loginRequest} from '../actions/index'
 import '../assets/styles/Login.scss'
@@ -69,8 +70,10 @@ const Login = ({loginRequest, history}) => {
                 </section>
 
                 <p className="login__register">
-                    No tienes ninguna cuenta.
-                    <a href="">Registrate</a>
+                    ¿No tienes ninguna cuenta?
+                    <Link to='/register'>
+                        Registrate
+                    </Link>
                 </p>
 
             </section>
