@@ -6,7 +6,7 @@ import  '../assets/styles/Header.scss'
 import Logo from '../assets/images/logo.png'
 import {logoutRequest} from '../actions/index'
 
-const Header = ({user, logoutRequest}) => {
+const Header = ({user, logoutRequest, isInHome}) => {
     const hasUser = user.email
 
     const handleLogout = () => {
@@ -14,7 +14,7 @@ const Header = ({user, logoutRequest}) => {
         logoutRequest({})
     }
     return (
-        <header className="header">
+        <header className="header" style={{backgroundColor: isInHome && '#8f57fd'}}>
             <Link to='/'>
                 <img src={Logo} alt="logo" className="header__img"/>
             </Link>

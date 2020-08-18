@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Header from './Header'
 import {Link} from 'react-router-dom'
 import { connect } from 'react-redux'
 import { newUser } from '../actions/index'
@@ -27,39 +28,42 @@ const Register = ({newUser, history}) => {
         history.push('/')
     }
     return (
-        <section className="register">
-            <div className="register__container">
-                <h2>Registrate</h2>
-                <form className="register__container--form"
-                onSubmit={onSubmit}>
-                    <input className="input"
-                    type="text"
-                    placeholder="Name"
-                    name='name'
-                    onChange={handleChange}
-                    />
+        <>
+            <Header/>
+            <section className="register">
+                <div className="register__container">
+                    <h2>Registrate</h2>
+                    <form className="register__container--form"
+                    onSubmit={onSubmit}>
+                        <input className="input"
+                        type="text"
+                        placeholder="Name"
+                        name='name'
+                        onChange={handleChange}
+                        />
 
-                    <input className="input"
-                    type="email"
-                    placeholder="Email"
-                    name='email'
-                    onChange={handleChange}
-                    />
+                        <input className="input"
+                        type="email"
+                        placeholder="Email"
+                        name='email'
+                        onChange={handleChange}
+                        />
 
-                    <input className="input"
-                    type="password"
-                    placeholder="Password"
-                    name='password'
-                    onChange={handleChange}
-                    />
+                        <input className="input"
+                        type="password"
+                        placeholder="Password"
+                        name='password'
+                        onChange={handleChange}
+                        />
 
-                    <button type="submit">Registrarme</button>
-                </form>
-                <Link to='/login'>
-                    Iniciar Sesión
-                </Link>
-            </div>
-        </section>
+                        <button type="submit">Registrarme</button>
+                    </form>
+                    <Link to='/login'>
+                        Iniciar Sesión
+                    </Link>
+                </div>
+            </section>
+        </>    
     )
 }
 

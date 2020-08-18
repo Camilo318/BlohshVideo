@@ -1,5 +1,5 @@
 .header {
-    background-color: #8F57FD;
+    background-color: #21c08b;
     min-height: 100px;
     width: 100%;
     display: flex;
@@ -15,12 +15,12 @@
     }
     .header__options {
         position: relative;
-        background-color: #8F57FD;
+        background-color: inherit;
 
         .header__profile {
             display: flex;
             align-items: center;
-            background-color: #8F57FD;
+            background-color: inherit;
             position: relative;
             z-index: 2;
             img {

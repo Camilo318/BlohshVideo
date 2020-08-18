@@ -5,12 +5,13 @@ import Categories from './Categories'
 import Carousel from './Carousel'
 import Item from './Item'
 import '../assets/styles/App.scss'
-import useInitialState from '../hooks/useInitialState.js'
+import Header from './Header'
 
 
 const Home = ({myList, trends, originals}) => {
     return (
         <>
+            <Header isInHome/>
             <Search />
             {
                 myList.length > 0 && (
