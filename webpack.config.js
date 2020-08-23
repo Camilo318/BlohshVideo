@@ -9,7 +9,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath: '/'
+        publicPath: './'
     },
     resolve: {
         extensions: ['.jsx', '.js']
@@ -39,7 +39,7 @@ module.exports = {
                 loader: 'file-loader',
                 options: {
                     name: '[name][hash].[ext]',
-                    outputPath: 'assets'
+                    outputPath: 'assets/images'
                 }
             }
         ]
