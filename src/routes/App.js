@@ -7,7 +7,7 @@ import Register from '../components/Register'
 import Player from '../components/Player'
 
 const App = () => (
-    <BrowserRouter basename='/dist/'>
+    <BrowserRouter basename='/'>
     <Layout>
         <Switch>
             <Route exact path="/" component={Home} />
